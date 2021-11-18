@@ -19,5 +19,43 @@ namespace AnimalShelterApi.Controllers
     {
       _db = db;
     }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Animal>>> Get(string name, string species, string gender, string color, int age, string description)
+    {
+      var query = _db.Animals.AsQueryable();
+
+      if (name != null)
+      {
+        query = query.Where(entry => entry.Name == name);
+      }
+
+      if (species != null)
+      {
+        query = query.Where(entry => entry.Species == species);
+      }    
+
+      if (gender != null)
+      {
+        query = query.Where(entry => entry.Gender == gender);
+      } 
+
+      if (color != null)
+      {
+        query = query.Where(entry => entry.Color == color);
+      } 
+
+      if (age != 0)
+      {
+        query = query.Where(entry => entry.Age == age);
+      }                
+
+      if (description != null)
+      {
+        query = query.Where(entry => entry.Description == description);
+      } 
+
+      return await query.ToListAsync();
+    }
   }
 }
