@@ -1,23 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AnimalShelterApi.Models;
 
-namespace AnimalShelterApi.Controllers
+namespace AnimalShelterApi.Models
 {
-  [Route("api/[controller]")]
-  [ApiController]
-  public class AnimalsController : ControllerBase
+  public class AnimalShelterApiContext : DbContext
   {
-    private readonly AnimalShelterApiContext _db;
-
-    public AnimalsController(AnimalShelterApiContext db)
+    public AnimalShelterApiContext(DbContextOptions<AnimalShelterApiContext> options)
+        : base(options)
     {
-      _db = db;
     }
   }
 }
