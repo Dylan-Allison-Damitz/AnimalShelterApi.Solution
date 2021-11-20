@@ -59,7 +59,7 @@ This application allows administrators to create new animals, update existing an
 ## Navigating the API
 
 * Now that `appsettings.json` is updated with your personal password and `migrations` have been implemented, launch the project by using the command `dotnet run`
-* After launching the project you will have two methods for navigating the API: Swagger and browser endpoints
+* After launching the project you will have two methods for navigating the API: _Swagger_ and _browser endpoints_
 ### Swagger
 * Open up your browser and copy this url into your search bar `http://localhost:5000/swagger/index.html`
 * This will allow you to navigate through Swagger's custom interface built using the Animal Shelter API
