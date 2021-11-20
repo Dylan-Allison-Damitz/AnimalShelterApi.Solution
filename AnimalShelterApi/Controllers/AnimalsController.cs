@@ -70,7 +70,7 @@ namespace AnimalShelterApi.Controllers
     [HttpGet("{id}")]
     public async Task<ActionResult<Animal>> GetAnimal(int id)
     {
-      var movie = await _db.Animals.FindAsync(id);
+      var animal = await _db.Animals.FindAsync(id);
 
       if (animal == null)
       {
@@ -116,7 +116,7 @@ namespace AnimalShelterApi.Controllers
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAnimal(int id)
     {
-      var animal = await _db.Amimals.FindAsync(id);
+      var animal = await _db.Animals.FindAsync(id);
       if (animal == null)
       {
         return NotFound();
