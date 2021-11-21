@@ -76,6 +76,8 @@ This application allows administrators to create new animals, update existing an
 | PUT /api/Animals/{id}      | Edit animal by id     |
 | DELETE /api/Animals/{id}   | Delete animal by id   |
 ```
+## Known Bugs
+* No known bugs at this time
 
 ## License :clipboard:
 MIT &copy; 2021 _Dylan Allison-Damitz_
