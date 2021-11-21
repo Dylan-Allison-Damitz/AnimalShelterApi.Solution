@@ -63,8 +63,19 @@ This application allows administrators to create new animals, update existing an
 ### Swagger
 * Open up your browser and copy this url into your search bar `http://localhost:5000/swagger/index.html`
 * This will allow you to navigate through Swagger's custom interface built using the Animal Shelter API
-* You can explore
-
+* Swagger allows you to explore through the `GET`, `POST`, `PUT`, and `DELETE` end points
+### Browser end point queries
+* For a less polished API call experience, you can naviagte to your browser after you `dotnet run` and manually input HTTP requests
+* After typing the base url into your browser (`http://localhost:5000/`) you can return various API end points by affixing any of the following:
+```
+| Route                      | Usage                 |   
+|----------------------------|-----------------------|
+| GET /api/Animals           | Return all animals    | 
+| POST /api/Animals          | Create new animal     |
+| GET /api/Animals/{id}      | Return animal by id   |
+| PUT /api/Animals/{id}      | Edit animal by id     |
+| DELETE /api/Animals/{id}   | Delete animal by id   |
+```
 
 ## License :clipboard:
 MIT &copy; 2021 _Dylan Allison-Damitz_
