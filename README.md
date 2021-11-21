@@ -47,7 +47,7 @@ This application allows administrators to create new animals, update existing an
 }
 
 ```
-* Make sure you remove the curly brackets after entering in your username and password
+* Make sure you remove the curly brackets after entering in your password
 * Once your database connection is complete, return to the terminal and run `dotnet build` to compile the project
 
 ## Implementing Migrations
