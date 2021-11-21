@@ -53,7 +53,7 @@ This application allows administrators to create new animals, update existing an
 ## Implementing Migrations
 
 * Once `appsettings.json` has been created and filled out, make sure you are still within the `AnimalShelterApi` folder and enter the command `dotnet tool install --global dotnet-ef --version 3.0.0` to ensure Enitity Framework is installed on your system
-* Type `dotnet ef database update` to assure any changes have been accounted for
+* Type `dotnet ef database update` to ensure any changes have been accounted for
 * `dotnet build` will compile the project
 
 ## Navigating the API
